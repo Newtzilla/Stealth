@@ -67,7 +67,7 @@ public class CameraMovement : MonoBehaviour {
         // If a raycast from the check position to the player hits something...
         if(Physics.Raycast(checkPos, player.position - checkPos, out hit, relCameraPosMag))
             // ... if it is not the player...
-            if(hit.transform != player)
+            if(hit.transform != player && hit.transform.tag != "Enemy")
                 // This position isn't appropriate.
                 return false;
         

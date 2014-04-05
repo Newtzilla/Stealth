@@ -36,7 +36,7 @@ public class LaserSwitchDeactivation : MonoBehaviour {
         laser.SetActive(false);
         
         // Store the renderer component of the screen.
-        var screen = transform.Find("prop_switchUnit_screen_001").renderer;
+        var screen = transform.Find("prop_switchUnit_screen").renderer;
         
         // Change the material of the screen to the unlocked material.
         screen.material = unlockedMat;
